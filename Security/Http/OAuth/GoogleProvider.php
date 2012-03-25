@@ -50,7 +50,7 @@ class GoogleProvider extends OAuthProvider
         $content = http_build_query($parameters);
 
         $response = $this->httpRequest($url, $content);
-        $response = json_decode($response);
+        $response = json_decode($response,true);
 
         if (isset($response['error'])) {
             throw new AuthenticationException(sprintf('OAuth error: "%s"', $response['error']));
