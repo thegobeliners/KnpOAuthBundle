@@ -15,6 +15,8 @@ use Knp\Bundle\OAuthBundle\Security\Http\OAuth\OAuthProvider;
 
 use Symfony\Component\HttpFoundation\Request;
 
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+
 /**
  * GoogleProvider
  *
