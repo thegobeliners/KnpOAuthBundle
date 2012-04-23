@@ -31,13 +31,5 @@ class KnpOAuthExtension extends Extension
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/'));
         $loader->load('oauth.xml');
-
-        if ($container->hasDefinition('doctrine.orm.security.user.provider')) {
-            $container
-                ->register('knp_oauth.user.provider.entity')
-                ->setClass($container->getParameter('knp_oauth.user.provider.entity.class'))
-                ->setParent(new Reference('doctrine.orm.security.user.provider'))
-                ;
-        }
     }
 }
