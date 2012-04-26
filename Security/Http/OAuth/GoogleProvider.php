@@ -32,7 +32,7 @@ class GoogleProvider extends OAuthProvider
         'access_token_url'  => 'https://accounts.google.com/o/oauth2/token',
         'infos_url'         => 'https://www.googleapis.com/oauth2/v1/userinfo',
         'username_path'     => 'name',
-        'scope'             => 'userinfo.profile',
+        'scope'             => 'https://www.googleapis.com/auth/userinfo.profile',
     );
 
     /**
