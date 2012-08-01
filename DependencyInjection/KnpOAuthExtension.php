@@ -14,6 +14,7 @@ namespace Knp\Bundle\OAuthBundle\DependencyInjection;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension,
     Symfony\Component\DependencyInjection\Loader\XmlFileLoader,
     Symfony\Component\DependencyInjection\ContainerBuilder,
+    Symfony\Component\DependencyInjection\Reference,
     Symfony\Component\Config\FileLocator;
 
 /**

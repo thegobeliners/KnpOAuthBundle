@@ -73,8 +73,11 @@ Using the `KnpOAuthBundle` is just a matter of configuring an `oauth` firewall i
                     scope:             <your_oauth_scope>
                     check_path:        /secured/login_check
                     login_path:        /secured/login
+<<<<<<< HEAD
         factories:
             - "%kernel.root_dir%/../vendor/bundles/Knp/Bundle/OAuthBundle/Resources/config/security_factories.xml"
+=======
+>>>>>>> refs/remotes/origin/master
 
 Please see [the configuration reference](https://github.com/KnpLabs/KnpOAuthBundle/blob/master/Resources/doc/03_configuration.md) for a description of the configuration options.
 
